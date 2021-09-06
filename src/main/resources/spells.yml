@@ -1,0 +1,34 @@
+################################## #
+## The Configuration for Spells ## #
+################################## #
+
+## When you are configuring your spells, we expect seconds to be parsed. If you wish to use ticks, append 't' to the value.
+## e.g 600t = 600 ticks = 30 seconds.
+## while if you don't append 't' it would be 600 seconds which is equal to 5 minutes.
+
+spells:
+  accio:
+    radius: 5 # The maximum distance that drops can be away from the player to be pulled towards said player.
+  aguamenti:
+    duration: 30 # How long the water should stay until it disappears.
+  expelliarmus:
+    disarm-weapons: true # If this spell should disarm weapons including swords, bows and wands.
+  incendio:
+    duration: 100t # How long the fire should last.
+  stupefy:
+    vertical-kb: 2 # How much vertical knockback should the target take.
+    horizontal-kb: 0.5 # How much horizontal knockback should the target take.
+    confusion: 200t # How long should the target be confused for.
+    weakness: 100t # How long shoulld the target have weakness for.
+    damage: 2 # How many health points should be redacted from the player's health.
+  time:
+    lightning: true # Should lightning strike when executing this spell.
+  wingardium-leviosa:
+    cancel-fall-damage: true # If the spell should cancel fall damage.
+    duration: 200t # How long should the caster be able to fly for.
+  crucio:
+    duration: 10 # How long should the target be victimised for.
+  petrificus-totalus:
+    duration: 100t # How long the target should be petrified for.
+  reducto:
+    replace-blocks: 100t # How long after this spell is executed should the blocks be re-generated.

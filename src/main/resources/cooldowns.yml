@@ -1,0 +1,23 @@
+############################## #
+## The Cooldowns for Spells ## #
+############################## #
+
+## Please do not use 0 for cooldowns, instead use -1
+## All values are parsed into seconds
+## Give the permission node 'spells.no-cooldown' to bypass
+
+cooldowns:
+  accio: 5
+  aguamenti: 90
+  expelliarmus: 120
+  incendio: 45
+  morsmordre: 60
+  pack: 10
+  stupefy: 120
+  time: 600
+  wingardium-levosa: 180
+  avada-kedavra: 300
+  crucio: 300
+  petrificus-totalus: 300
+  reducto: 300
+  sectumsempra: 300

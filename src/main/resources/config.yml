@@ -1,0 +1,122 @@
+messages:
+  player:
+    not_found: "&cNo player found with this username."
+    no_player: "&cYou did not specify a player."
+    knows: "&cThis player already knows this spell."
+    taught: "&eYou have taught &6{0} &ethe &6{0} &espell."
+    entity_only: "&eThis spell only works on entities!"
+    block_only: "&eThis spell only works on blocks!"
+    no_space: "&cYou do not have any space in your inventory."
+    knows_all: "&cThis player already knows all spells."
+    doesnt_know_all: "&cThis player does not know all spells."
+    doesnt_know: "&cThis player does not know the &e{0} &cspell."
+  spell:
+    player_only: "&eYou can only use this spell on players."
+    no_known_spells: "&cYou do not know any spells."
+    player_wait: "&cYou must wait &e{0} &cbefore using this spell again."
+    selected: "&eYou now have the &6{0} &espell selected."
+    unauthorized: "&cYou are not authorized to run this spell."
+    not_recognized: "&cI could not recognize the spell provided."
+    cannot_teach: "&cYou cannot teach this spell because you do not know it yourself!"
+    taught: "&eYou have taught the &6{0} &espell!"
+    forgotten: "&eYou have forgotten the &6{0} &espell."
+
+  wand:
+    given: "&aYou have received the &e{0} &awand."
+    invalid: "&eNo wand with the name &c'{0}' &ecould be found."
+  command:
+    player_only: "&cOnly players can run this command."
+wand:
+  types:
+    - "STICK"
+  explosion: false
+  enchantment: true
+  lore:
+    name: "&3Wand"
+    enabled: true
+    current-spell: true
+    format:
+      - '&eSpell: &6{spell}'
+      - '&b{length} &finches'
+      - '&b{core} &fcore'
+      - '&b{wood} &fwood &7(&o{rarity}&7)'
+      - '&f{rigidity}'
+      - '&fManufactured by &b{manufacturer}'
+    length:
+      minimum: 9
+      maximum: 18
+    types:
+      1: # Legendary
+        - 'Elder'
+      2: # Very Rare
+        - 'Cherry'
+      3: # Rare
+        - 'Apple'
+        - 'Holly'
+        - 'Yew'
+      4: # Uncommon
+        - 'Acacia'
+        - 'Birch'
+        - 'Ivy'
+        - 'Oak'
+        - 'Red'
+        - 'Rose'
+        - 'Silver Lime'
+        - 'Vine'
+        - 'Willow'
+      5: # Common
+        - 'Alder'
+        - 'Aspen'
+        - 'Beech'
+        - 'Blackthorn'
+        - 'Black Walnut'
+        - 'Cedar'
+        - 'Cypress'
+        - 'Dog'
+        - 'Ebony'
+        - 'Elm'
+        - 'Fir'
+        - 'Hawthorn'
+        - 'Hazel'
+        - 'Hornbeam'
+        - 'Larch'
+        - 'Laurel'
+        - 'Mahogany'
+        - 'Maple'
+        - 'Pear'
+        - 'Poplar'
+        - 'Reed'
+        - 'Rowan'
+        - 'Spruce'
+        - 'Sycamore'
+        - 'Walnut'
+    cores:
+      dragon_heartstring: 0.3
+      phoenix_feather: 0.0009
+      unicorn_tail_hair: 0.3
+      veela_hair: 0.133
+      thestral_tail_hair: 0.0001
+      troll_whisker: 0.133
+      coral: 0.133
+    manufacturers:
+      Arturo_Cephalopos: 0.0094
+      Antioch_Peverell: 0.0005
+      Death: 0.0001
+      Mykew_Gregorovitch: 0.1
+      Jimmy_Kiddell: 0.2
+      Ollivander_family: 0.69
+    rigidity:
+      - 'Very unyielding'
+      - 'Quite unyielding'
+      - 'Quite springy'
+      - 'Very springy'
+    crafting:
+      enabled: true
+      recipe:
+        - ' A '
+        - ' B '
+        - ' C '
+      ingredients:
+        A: 'ghast tear'
+        B: 'nether star'
+        C: 'stick'

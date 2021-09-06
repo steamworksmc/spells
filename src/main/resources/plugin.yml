@@ -1,0 +1,13 @@
+name: Spells
+version: 1.0
+main: me.steamworks.SpellPlugin
+description: A people to act as if you were in the wizarding-world.
+author: Steamworks
+api-version: 1.17
+commands:
+  wand:
+    description: Hmmm... what might this do?
+  teach:
+    description: Learn a command or three!
+  unteach:
+    description: Forget a command or two!
