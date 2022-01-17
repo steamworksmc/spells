@@ -103,3 +103,10 @@ public class AvadaKedavra extends Spell {
 }
 
 ```
+
+## Views
+<img src="https://i.imgur.com/64bFqw1.png">
+<br>
+<img src="https://i.imgur.com/NKhYZoJ.png">
+<br>
+<img src="https://i.imgur.com/pznBZ1i.png">

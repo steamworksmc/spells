@@ -131,7 +131,7 @@ public class TeachCommands implements CommandExecutor {
 
                 sender.sendMessage(appendedStr);
             } else {
-                sender.sendMessage(spell.playerKnows(target) ? Locale.SPELL_FORGOTTEN.format(spell.getName()) : Locale.PLAYER_DOESNT_KNOW.format());
+                sender.sendMessage(spell.playerKnows(target) ? Locale.SPELL_FORGOTTEN.format(spell.getName()) : Locale.PLAYER_DOESNT_KNOW.format(spell.getName()));
                 if (spell.playerKnows(target)) {
                     spell.unteach(target);
                     sender.sendMessage(Locale.SPELL_FORGOTTEN.format(spell.getName()));

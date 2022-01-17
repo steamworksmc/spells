@@ -17,8 +17,8 @@ public enum Locale {
     PLAYER_ENTITY_ONLY("PLAYER.ENTITY_ONLY"),
     PLAYER_BLOCK_ONLY("PLAYER.BLOCK_ONLY"),
     PLAYER_KNOWS_ALL("PLAYER.KNOWS_ALL"),
-    PLAYER_DOESNT_KNOWS_ALL("PLAYERS.DOESNT_KNOWS_ALL"),
-    PLAYER_DOESNT_KNOW("PLAYERS.DOESNT_KNOW"),
+    PLAYER_DOESNT_KNOWS_ALL("PLAYER.DOESNT_KNOWS_ALL"),
+    PLAYER_DOESNT_KNOW("PLAYER.DOESNT_KNOW"),
 
     SPELL_PLAYER_ONLY("SPELL.PLAYER_ONLY"),
     SPELL_NO_KNOWN_SPELLS("SPELL.NO_KNOWN_SPELLS"),
@@ -40,6 +40,7 @@ public enum Locale {
     private String path;
 
     public String format(Object... objects) {
+        System.out.println("messages." + this.path.toLowerCase());
         return ChatColor.translateAlternateColorCodes('&', new MessageFormat(Objects.requireNonNull(SpellPlugin.getInstance().getConfig().getString("messages." + path.toLowerCase()))).format(objects));
     }
 
